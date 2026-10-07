@@ -3,51 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakhyia – Coming Soon</title>
+    <title>Sakhiya | Launching Soon</title>
+
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #f7f3f0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            color: #3a2f2f;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
-        .container {
-            max-width: 500px;
-            padding: 20px;
+
+        body{
+            font-family: "Georgia", serif;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            background:#f8f4ed;
+            position:relative;
+            overflow:hidden;
         }
-        h1 {
-            font-size: 36px;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+
+        /* Logo Background */
+        body::before{
+            content:"";
+            position:absolute;
+            inset:0;
+            background:url('sakhiya-logo.jpg') center center no-repeat;
+            background-size:70%;
+            opacity:0.12;
+            z-index:0;
         }
-        p {
-            font-size: 18px;
-            margin-top: 0;
+
+        /* Soft Overlay */
+        body::after{
+            content:"";
+            position:absolute;
+            inset:0;
+            background:rgba(248,244,237,0.78);
+            z-index:1;
         }
-        .brand {
-            font-weight: bold;
-            font-size: 22px;
-            margin-bottom: 20px;
+
+        .container{
+            position:relative;
+            z-index:2;
+            padding:40px;
+            max-width:700px;
         }
-        .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #7a6f6f;
+
+        .title{
+            font-size:4rem;
+            color:#9c7840;
+            letter-spacing:4px;
+            margin-bottom:20px;
+        }
+
+        .subtitle{
+            font-size:1.3rem;
+            color:#6a583e;
+            margin-bottom:30px;
+            line-height:1.8;
+        }
+
+        .divider{
+            width:120px;
+            height:2px;
+            background:#b6925a;
+            margin:25px auto;
+        }
+
+        .coming-soon{
+            font-size:2.2rem;
+            color:#7b5c2e;
+            font-weight:normal;
+            margin-bottom:20px;
+        }
+
+        .message{
+            color:#666;
+            font-size:1.05rem;
+            line-height:1.8;
+        }
+
+        @media (max-width:768px){
+            .title{
+                font-size:2.6rem;
+            }
+
+            .coming-soon{
+                font-size:1.7rem;
+            }
+
+            body::before{
+                background-size:95%;
+            }
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="brand">Sakhyia</div>
-        <h1>Coming Soon</h1>
-        <p>Handcrafted elegance inspired by heritage.<br>Launching soon.</p>
-        <div class="footer">© 2026 Sakhyia</div>
+        <h1 class="title">SAKHIYA</h1>
+
+        <div class="divider"></div>
+
+        <h2 class="coming-soon">Launching Soon</h2>
+
+        <p class="subtitle">
+            Woven in Friendship, Where Traditions Bloom.
+        </p>
+
+        <p class="message">
+            Our website is currently being crafted with care and elegance.
+            Stay tuned as we prepare to bring you a beautiful collection that
+            celebrates heritage, craftsmanship, and timeless connections.
+        </p>
     </div>
+
 </body>
 </html>
