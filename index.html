@@ -1,124 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakhyia | Launching Soon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<title>Sakhyia | Woven in Friendship, Where Traditions Bloom</title>
 
-        body{
-            font-family: "Georgia", serif;
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            background:#f8f4ed;
-            position:relative;
-            overflow:hidden;
-        }
+<link relonts.googleapis.com
+<link rel="preconnect" href<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=L;500&display=swap
 
-        /* Logo Background */
-        body::before{
-            content:"";
-            position:absolute;
-            inset:0;
-            background:url('Logo.jpeg') center center no-repeat;
-            background-size:70%;
-            opacity:0.12;
-            z-index:0;
-        }
+<style>
 
-        /* Soft Overlay */
-        body::after{
-            content:"";
-            position:absolute;
-            inset:0;
-            background:rgba(248,244,237,0.78);
-            z-index:1;
-        }
+:root{
+    --ivory:#F5F1EA;
+    --gold:#C8A24D;
+    --dark-gold:#A97825;
+    --pink:#E9C2C8;
+    --olive:#75624D;
+    --text:#3A342E;
+}
 
-        .container{
-            position:relative;
-            z-index:2;
-            padding:40px;
-            max-width:700px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .title{
-            font-size:4rem;
-            color:#9c7840;
-            letter-spacing:4px;
-            margin-bottom:20px;
-        }
+body{
+    background:var(--ivory);
+    color:var(--text);
+    font-family:'Lora', serif;
+    min-height:100vh;
+}
 
-        .subtitle{
-            font-size:1.3rem;
-            color:#6a583e;
-            margin-bottom:30px;
-            line-height:1.8;
-        }
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+}
 
-        .divider{
-            width:120px;
-            height:2px;
-            background:#b6925a;
-            margin:25px auto;
-        }
+.container{
+    max-width:1000px;
+    width:100%;
+    text-align:center;
+}
 
-        .coming-soon{
-            font-size:2.2rem;
-            color:#7b5c2e;
-            font-weight:normal;
-            margin-bottom:20px;
-        }
+.logo{
+    max-width:650px;
+    width:90%;
+    margin:0 auto 50px;
+}
 
-        .message{
-            color:#666;
-            font-size:1.05rem;
-            line-height:1.8;
-        }
+.logo img{
+    width:100%;
+    height:auto;
+}
 
-        @media (max-width:768px){
-            .title{
-                font-size:2.6rem;
-            }
+.tagline{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+    color:var(--dark-gold);
+    margin-bottom:25px;
+    line-height:1.2;
+}
 
-            .coming-soon{
-                font-size:1.7rem;
-            }
+.description{
+    max-width:700px;
+    margin:0 auto 40px;
+    font-size:1.15rem;
+    line-height:1.8;
+    color:#5f5549;
+}
 
-            body::before{
-                background-size:95%;
-            }
-        }
-    </style>
+.divider{
+    color:var(--gold);
+    font-size:1.5rem;
+    margin:30px 0;
+}
+
+.button{
+    display:inline-block;
+    text-decoration:none;
+    background:linear-gradient(
+        135deg,
+        var(--gold),
+        #e2bf67
+    );
+    color:white;
+    padding:16px 36px;
+    border-radius:50px;
+    font-size:1rem;
+    transition:.3s ease;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.footer{
+    margin-top:60px;
+    color:#8b7a63;
+    font-size:.95rem;
+}
+
+.bloom{
+    color:var(--pink);
+}
+
+@media(max-width:768px){
+
+.tagline{
+    font-size:2.2rem;
+}
+
+.description{
+    font-size:1rem;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1 class="title">SAKHIYA</h1>
+<section class="hero">
 
-        <div class="divider"></div>
+<div class="container">
 
-        <h2 class="coming-soon">Launching Soon</h2>
+<div class="logo">
+    <img src="logo.png" alt="Sakhyia">
+">
+    Woven in Friendship,<br>
+    Where Traditions <span class="bloom">Bloom</span>
+</h1>
 
-        <p class="subtitle">
-            Woven in Friendship, Where Traditions Bloom.
-        </p>
+<div class="divider">❦</div>
 
-        <p class="message">
-            Our website is currently being crafted with care and elegance.
-            Stay tuned as we prepare to bring you a beautiful collection that
-            celebrates heritage, craftsmanship, and timeless connections.
-        </p>
-    </div>
+<p class="description">
+    Sakhyia celebrates the beauty of heritage, craftsmanship
+    and meaningful connections. Inspired by timeless weaving
+    traditions and the artistry of handmade textiles, our
+    collections are thoughtfully created to tell stories that
+    connect generations.
+</p>
 
-</body>
-</html>
+<a href
